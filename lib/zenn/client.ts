@@ -54,7 +54,6 @@ export async function getBlogs({
         publishedAt: item.pubDate || "",
         content: item.content || item.contentSnippet || "",
         topics,
-        thumbnail: item.enclosure?.url || null,
       };
     });
 
