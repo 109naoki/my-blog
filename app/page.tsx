@@ -19,7 +19,7 @@ type Props = {
   };
 };
 
-export default async function HomePage({ searchParams }: Props) {
+export default async function Page({ searchParams }: Props) {
   const q = searchParams.q ?? "";
   const tag = searchParams.tag ?? "";
   const page = Number(searchParams.page) || 1;
@@ -44,10 +44,13 @@ export default async function HomePage({ searchParams }: Props) {
       <div className="space-y-8">
         <div className="flex flex-col gap-6">
           <Services />
-          <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mt-10">
-            <AnimatedTitle>最新の投稿</AnimatedTitle>
+          <div className="flex flex-col sm:flex-row justify-center items-center sm:justify-between gap-4 mt-10 text-center">
+            <div className="mb-6">
+              <AnimatedTitle>最新の投稿</AnimatedTitle>
+            </div>
             <SearchForm />
           </div>
+
           <div className="flex flex-col sm:flex-row gap-4 items-start">
             <TagFilter tags={tags} />
           </div>

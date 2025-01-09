@@ -50,10 +50,13 @@ export function Profile() {
             />
           </div>
           <div className="flex-1 text-center md:text-left">
-            <h2 className="text-3xl font-bold mb-4">伊藤 直樹</h2>
-            <p className="text-xl text-muted-foreground mb-6">
-              Software Engineer
-            </p>
+            <Link href="/profile">
+              <h2 className="text-3xl font-bold mb-4">伊藤 直樹</h2>
+
+              <p className="text-xl text-muted-foreground mb-6">
+                Software Engineer
+              </p>
+            </Link>
             <TypewriterText text={description} />
             <div className="flex gap-4 justify-center md:justify-start mt-6">
               <Link
