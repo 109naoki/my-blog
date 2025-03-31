@@ -46,7 +46,7 @@ export default async function Page({ searchParams }: Props) {
           <Services />
           <div className="flex flex-col sm:flex-row justify-center items-center sm:justify-between gap-4 mt-10 text-center">
             <div className="mb-6">
-              <AnimatedTitle>最新の投稿</AnimatedTitle>
+              <AnimatedTitle>Zennの記事一覧</AnimatedTitle>
             </div>
             <SearchForm />
           </div>

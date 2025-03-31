@@ -16,7 +16,6 @@ const parser = new Parser<{ item: CustomItem }>({
 
 const ZENN_RSS_URL = "https://zenn.dev/109naoki/feed";
 
-// 固定のタグを定義
 const FIXED_TAGS: Tag[] = [
   { id: "nextjs", name: "Next.js" },
   { id: "nestjs", name: "Nest.js" },
@@ -54,6 +53,7 @@ export async function getBlogs({
         publishedAt: item.pubDate || "",
         content: item.content || item.contentSnippet || "",
         topics,
+        thumbnail: item.enclosure?.url || undefined,
       };
     });
 

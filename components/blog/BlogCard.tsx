@@ -1,11 +1,11 @@
 "use client";
-
 import { Blog } from "@/lib/zenn/types";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { format } from "date-fns";
 import { Badge } from "@/components/ui/badge";
+import Image from "next/image";
 
 export function BlogCard({ blog }: { blog: Blog }) {
   return (
@@ -20,10 +20,11 @@ export function BlogCard({ blog }: { blog: Blog }) {
         <Card className="overflow-hidden group hover:shadow-lg transition-shadow">
           {blog.thumbnail && (
             <div className="relative h-48 w-full overflow-hidden">
-              <img
+              <Image
                 src={blog.thumbnail}
                 alt={blog.title}
-                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                fill
+                className="object-cover transition-transform duration-300 group-hover:scale-105"
                 loading="lazy"
               />
               <div className="absolute inset-0 bg-black/10 group-hover:bg-black/20 transition-colors" />
