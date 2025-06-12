@@ -4,7 +4,7 @@ import { ArrowRight } from "lucide-react";
 
 export default function Page() {
   return (
-    <main className=" bg-gray-50 dark:bg-gray-900">
+    <main>
       <div className="container mx-auto px-4 py-24 text-center">
         <h1 className="text-3xl font-bold text-gray-900 dark:text-white mb-8">
           お問い合わせ
