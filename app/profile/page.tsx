@@ -96,7 +96,7 @@ export default function Page() {
 
   return (
     <main className="min-h-screen bg-gray-50 dark:bg-gray-900 transition-colors duration-200">
-      <div className="bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-700 dark:to-purple-700 text-white">
+      <div className="bg-gray-50 dark:bg-gray-900 transition-colors duration-200">
         <div className="container mx-auto px-4 py-16">
           <div className="flex flex-col items-center text-center">
             <img
@@ -104,9 +104,9 @@ export default function Page() {
               alt="アイコン"
               className="w-32 h-32 rounded-full border-4 border-white dark:border-gray-800 shadow-lg mb-4"
             />
-            <h1 className="text-3xl font-bold mb-2">伊藤直樹</h1>
-            <p className="text-xl mb-4">フルスタックエンジニア</p>
-            <div className="flex items-center space-x-4 text-sm">
+            <h1 className="text-3xl font-bold mb-2 text-gray-900 dark:text-white">伊藤直樹</h1>
+            <p className="text-xl mb-4 text-gray-700 dark:text-gray-300">フルスタックエンジニア</p>
+            <div className="flex items-center space-x-4 text-sm text-gray-700 dark:text-gray-300">
               <span className="flex items-center">
                 <MapPin className="w-4 h-4 mr-1" />
                 東京都
@@ -117,7 +117,7 @@ export default function Page() {
               </span>
               <a
                 href="https://github.com/109naoki"
-                className="flex items-center hover:text-gray-200"
+                className="flex items-center hover:text-primary"
                 target="_blank"
                 rel="noopener noreferrer"
               >
