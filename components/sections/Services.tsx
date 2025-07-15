@@ -12,7 +12,7 @@ import { Button } from "@/components/ui/button";
 
 export function Services() {
   const handleServiceHubClick = () => {
-    window.open("https://carrer.service-hub.jp/", "_blank");
+    window.open("https://service-hub.jp/", "_blank");
   };
 
   return (
@@ -27,7 +27,7 @@ export function Services() {
           <CardContent>
             <div className="mb-6 relative w-full md:w-4/5 lg:w-3/4 mx-auto aspect-video">
               <Image
-                src="https://carrer.service-hub.jp/carrer-hub.png"
+                src="https://service-hub.jp/carrer-hub.png"
                 alt="Carrer Hub サービス画像"
                 fill
                 className="object-cover rounded-md"
